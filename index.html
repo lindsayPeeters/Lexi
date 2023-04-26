@@ -20,8 +20,9 @@
                 <li><a href="#section-vision">Vision</a></li>
                 <li><a href="#section-mission">Mission</a></li>
                 <li><a href="#section-reviews">Reviews</a></li>
-                <li class="btn primairy"><a href="#section-signUp">SignUp</a></li>
+                <li class="btn primairy"><a href="#section-signUp">Sign up</a></li>
               </ul>
+              <a class="hamburger" href="#">☰</a>
         </nav>
     </header>
     <section id="section-vision" class="visoin">
@@ -62,5 +63,15 @@
     <footer>
 
     </footer>
+    <script>
+        //hamburger menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+        hamburger.addEventListener('click', () => {
+            console.log("clicked");
+        navLinks.classList.toggle('show');
+        });
+
+    </script>
 </body>
 </html>

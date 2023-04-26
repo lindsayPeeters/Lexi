@@ -21,6 +21,26 @@ h1{
 .primairy a{
     color: black;
 }
+.primairy:hover{
+    background-color: #5BC7D3;
+}
+.primairy:active{
+    background-color: #97FFFF;
+}
+.hamburger{
+    text-decoration: none;
+    color: white;
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
 /*HEADER*/
 header{
     background: linear-gradient(to right, #7D4CFF, #9777F4);
@@ -55,3 +75,20 @@ header nav ul li a{
     text-align: center;
     text-decoration: none;
 }
+/*Display schermen en kleine tablets*/
+@media only screen and (max-width: 768px) {
+    header nav{
+        display: flex;
+        direction: column;
+    }
+    header nav ul {
+      display: none;
+    }
+    header nav ul li {
+      display: block;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  
