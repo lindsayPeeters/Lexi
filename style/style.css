@@ -6,6 +6,21 @@ body{
 h1{
     font-weight: 400;
 }
+.btn{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 44px;
+    padding-right: 44px;
+    border-radius: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.primairy{
+    background-color: #79E5F1;
+}
+.primairy a{
+    color: black;
+}
 /*HEADER*/
 header{
     background: linear-gradient(to right, #7D4CFF, #9777F4);
@@ -27,14 +42,16 @@ header nav{
 header nav ul{
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    align-items: baseline;
 }
 header nav ul li{
     float: left;
+    padding-left: 55px;
 }
 header nav ul li a{
     display: block;
     color: white;
     text-align: center;
-    padding-left: 55px;
     text-decoration: none;
 }
