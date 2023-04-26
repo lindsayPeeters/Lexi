@@ -2,6 +2,7 @@
 /*ALGEMEEN*/
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: #EEF3F7;
 }
 h1{
     font-weight: 400;
@@ -45,6 +46,9 @@ p{
     align-items: flex-start;
     gap: 24px;
 }
+section{
+    padding: 80px;
+}
 /*HEADER*/
 header{
     background: linear-gradient(to right, #7D4CFF, #9777F4);
@@ -87,7 +91,6 @@ article{
 #section-intro{
     background: linear-gradient(to right, #7D4CFF, #9777F4);
     color: white;
-    padding: 80px;
     padding-top: 40px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 80%;
@@ -102,6 +105,24 @@ article{
     background-color: rgba(238, 243, 247, 0.2);
     border-radius: 100%;
     margin-bottom: -80px;
+}
+/*VISION SECTION*/
+#section-vision{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+#section-vision article.illustration{
+    width: 30%;
+    background-color: rgba(151, 119, 244, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    border-radius: 100%;
+   /*  border-top-right-radius: 100%;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 100%; */
+
 }
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
@@ -123,6 +144,13 @@ article{
     }
     #section-intro article.illustration{
         display: none;
+    }
+    #section-vision{
+        flex-direction: column;
+        gap: 0px;
+    }
+    #section-vision article.illustration{
+        width: 100%;
     }
   }
   
