@@ -6,6 +6,10 @@ body{
 h1{
     font-weight: 400;
 }
+p{
+    font-weight: 100;
+    font-size: 16px;
+}
 .btn{
     padding-top: 18px;
     padding-bottom: 18px;
@@ -75,6 +79,30 @@ header nav ul li a{
     text-align: center;
     text-decoration: none;
 }
+/*ARTICLE*/
+article{
+    width: 50%;
+}
+/*INTRO SECTION*/
+#section-intro{
+    background: linear-gradient(to right, #7D4CFF, #9777F4);
+    color: white;
+    padding: 80px;
+    padding-top: 40px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+#section-intro article.info img{
+    height: 30px;
+}
+#section-intro article.illustration{
+    background-color: rgba(238, 243, 247, 0.2);
+    border-radius: 100%;
+    margin-bottom: -80px;
+}
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
     header nav{
@@ -89,6 +117,12 @@ header nav ul li a{
     }
     .hamburger {
       display: block;
+    }
+    article{
+        width: 100%;
+    }
+    #section-intro article.illustration{
+        display: none;
     }
   }
   
