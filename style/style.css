@@ -1,6 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,700&display=swap');
+/*ALGEMEEN*/
 body{
-    font-family: 'Nunito', sans-serif;}
+    font-family: 'Nunito', sans-serif;
+}
 h1{
     font-weight: 400;
+}
+/*HEADER*/
+header{
+    background: linear-gradient(to right, #7D4CFF, #9777F4);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 54px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header svg{
+    width: 54px;
+    height: 54px;
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 55px;
+    text-decoration: none;
 }
