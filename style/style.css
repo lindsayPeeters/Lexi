@@ -47,7 +47,10 @@ p{
     gap: 24px;
 }
 section{
-    padding: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 /*HEADER*/
 header{
@@ -103,8 +106,15 @@ article{
 }
 #section-intro article.illustration{
     background-color: rgba(238, 243, 247, 0.2);
-    border-radius: 100%;
+    border-radius: 50%;
     margin-bottom: -80px;
+    transform: rotate(7.81deg);
+    display: flex;
+    justify-content: center;
+}
+#section-intro article.illustration img{
+    max-height: 538px;
+
 }
 /*VISION SECTION*/
 #section-vision{
@@ -141,6 +151,12 @@ article{
     }
     article{
         width: 100%;
+    }
+    section{
+        padding: 20px;
+    }
+    #section-intro{
+        padding: 46px;
     }
     #section-intro article.illustration{
         display: none;
