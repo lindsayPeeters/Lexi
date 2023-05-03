@@ -128,12 +128,12 @@ article{
 
 }
 /*VISION AND REVIEWS SECTION*/
-#section-vision,#section-mission, #section-reviews{
+#section-vision,#section-mission, #section-reviews, #section-signUp{
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
 }
-#section-vision article.illustration,#section-mission article.illustration, #section-reviews article.illustration{
+#section-vision article.illustration,#section-mission article.illustration, #section-reviews article.illustration, #section-signUp article.illustration{
     width: 30%;
     display: flex;
     padding: 40px;
@@ -157,6 +157,16 @@ article{
 }
 #section-mission article.illustration .circle img{
     height: 275px;
+}
+/*SECTION SIGNUP*/
+#section-signUp{
+    background-color: #E2EBF2;
+    justify-content: center;
+    margin: 24px;
+    border-radius: 15px;
+}
+form{
+
 }
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
