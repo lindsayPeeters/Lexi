@@ -149,11 +149,19 @@ article{
     height: 375px;
 }
 /*MISSION SECTION*/
+#section-mission{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
 #section-mission article.illustration .circle{
     background-color: rgba(82, 34, 208, 0.7);
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+#section-mission article.illustration .circle img{
+    height: 275px;
 }
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
@@ -176,12 +184,14 @@ article{
     section{
         padding: 20px;
     }
+    /*INTRO SECTION*/
     #section-intro{
         padding: 46px;
     }
     #section-intro article.illustration{
         display: none;
     }
+    /*VISSION SECTION*/
     #section-vision{
         flex-direction: column;
         gap: 0px;
@@ -192,9 +202,19 @@ article{
     #section-vision article.illustration .circle img{
         height: 275px;
     }
+    /*MISSION SECTION*/
+    #section-mission{
+        flex-direction: column;
+        gap: 0px;
+    }
+    #section-mission article.illustration{
+        width: 100%;
+    }
+    #section-mission article.illustration .circle img{
+        height: 175px;
+    }
     /*DESIGN ELEMENTS*/
     .circle{
-        background-color: rgba(151, 119, 244, 0.7);
         width: 300px;
         height: 300px;
         max-width: 301px;
