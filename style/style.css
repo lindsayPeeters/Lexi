@@ -128,7 +128,7 @@ article{
 
 }
 /*VISION AND REVIEWS SECTION*/
-#section-vision,#section-mission, #section-reviews, #section-signUp{
+#section-vision,#section-mission, #section-reviews, #section-signUp, #section-footer{
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
@@ -192,6 +192,15 @@ form button{
     padding-right:32px;
 }
 /*FOOTER*/
+footer{
+    background-color: black;
+    color:#EEF3F7;
+}
+ul li{
+    list-style: none;
+    padding-bottom: 5px;
+    margin-left: -15px;
+}
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
     header nav{
@@ -221,7 +230,7 @@ form button{
         display: none;
     }
     /*VISSION AND REVIEWS SECTION*/
-    #section-vision, #section-mission, #section-reviews{
+    #section-vision, #section-mission, #section-reviews, #section-footer{
         flex-direction: column;
         gap: 0px;
     }
