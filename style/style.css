@@ -148,6 +148,13 @@ article{
 #section-vision article.illustration .circle img{
     height: 375px;
 }
+/*MISSION SECTION*/
+#section-mission article.illustration .circle{
+    background-color: rgba(82, 34, 208, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 /*Display schermen en kleine tablets*/
 @media only screen and (max-width: 768px) {
     header nav{
