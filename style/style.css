@@ -127,33 +127,28 @@ article{
     max-height: 538px;
 
 }
-/*VISION SECTION*/
-#section-vision{
+/*VISION AND REVIEWS SECTION*/
+#section-vision,#section-mission, #section-reviews{
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
 }
-#section-vision article.illustration{
+#section-vision article.illustration,#section-mission article.illustration, #section-reviews article.illustration{
     width: 30%;
     display: flex;
     padding: 40px;
     z-index: 1;
 }
-#section-vision article.illustration .circle{
+#section-vision article.illustration .circle, #section-reviews article.illustration .circle{
     background-color: rgba(151, 119, 244, 0.7);
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
 }
-#section-vision article.illustration .circle img{
+#section-vision article.illustration .circle img,#section-reviews article.illustration .circle img{
     height: 375px;
 }
 /*MISSION SECTION*/
-#section-mission{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 100px;
-}
 #section-mission article.illustration .circle{
     background-color: rgba(82, 34, 208, 0.7);
     display: flex;
@@ -191,25 +186,18 @@ article{
     #section-intro article.illustration{
         display: none;
     }
-    /*VISSION SECTION*/
-    #section-vision{
+    /*VISSION AND REVIEWS SECTION*/
+    #section-vision, #section-mission, #section-reviews{
         flex-direction: column;
         gap: 0px;
     }
-    #section-vision article.illustration{
+    #section-vision article.illustration, #section-mission article.illustration, #section-reviews article.illustration{
         width: 100%;
     }
-    #section-vision article.illustration .circle img{
+    #section-vision article.illustration .circle img, #section-reviews article.illustration .circle img{
         height: 275px;
     }
     /*MISSION SECTION*/
-    #section-mission{
-        flex-direction: column;
-        gap: 0px;
-    }
-    #section-mission article.illustration{
-        width: 100%;
-    }
     #section-mission article.illustration .circle img{
         height: 175px;
     }
